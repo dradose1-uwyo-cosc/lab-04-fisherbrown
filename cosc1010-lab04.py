@@ -1,9 +1,9 @@
-# Your Name Here
+# Fisher Brown
 # UWYO COSC 1010
-# Submission Date
+# 1 Oct 24
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# Lab Section: 10
+# Sources, people worked with, help given to: jrob10
 # your
 # comments
 # here
@@ -102,4 +102,22 @@ min_temps = [
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+count = 0
+num = 0
+max = max_temps[0]
+min = min_temps[0]
+for i in range(0,len(min_temps)):
+    count = count + max_temps[i]
+    num = num + min_temps[i]
+    avg_max = count/len(max_temps)
+    avg_min = num/len(min_temps)
+    if max < max_temps[i]:
+        max = max_temps[i]
+    if min > min_temps[i]:
+        min = min_temps[i]
+
+print(avg_max)
+print(avg_min) 
+print(max)
+print(min)
 
